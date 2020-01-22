@@ -34,6 +34,10 @@ git pull <远程主机名> <远程分支名>:<本地分支名>
 git fetch origin dev（dev为远程仓库的分支名）
 git checkout -b dev(本地分支名称) origin/dev(远程分支名称)
 git pull origin dev(远程分支名称)
+或
+git clone <远程仓库>
+git checkout dev
+即可在本地创建dev分支并把远程dev分支pull下来,(前提是远程仓库已经建好dev分支)
 
 然后使用 git push 会把代码推送到远程分支dev上。
 相当于 git push origin dev:dev
